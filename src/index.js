@@ -12,12 +12,10 @@ const pageSize = 40;
 
 let windowHeight = document.documentElement.clientHeight;
 
-
 const formEl = document.querySelector('#search-form');
 const loadMoreBtnEl = document.querySelector('.load-more');
 loadMoreBtnEl.classList.add('is-hidden');
 
-/
 formEl.addEventListener('submit', onSearchFormSubmit);
 function onSearchFormSubmit(event) {
   event.preventDefault();
@@ -31,12 +29,11 @@ function onSearchFormSubmit(event) {
   if (searchQuery) {
     fetchImages(searchQuery, page)
       .then(recievedHits => {
-        
         const hitsAmount = recievedHits.totalHits;
 
         if (hitsAmount !== 0) {
           Notiflix.Notify.success(`Hooray! We found ${hitsAmount} images.`);
-          
+
           renderGallery(recievedHits.hits);
 
           if (hitsAmount > pageSize) {
@@ -50,7 +47,6 @@ function onSearchFormSubmit(event) {
       })
       .catch(error => {
         console.log(error);
-        
       });
   }
   page += 1;
@@ -68,7 +64,6 @@ async function fetchImages(searchTerm, page) {
   );
   return data;
 }
-
 
 const galleryEl = document.querySelector('.gallery');
 function renderGallery(cards) {
