@@ -1,0 +1,49 @@
+
+.form-container {
+    width: 100%;
+    background-color: #1773be;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    padding: 11px 0;
+    
+    display: flex;
+
+}
+
+.search-form {
+    
+    max-width: 370px;
+    margin: 0 auto;
+    
+}
+
+input {
+    padding: 1px 6px;
+    height: 28px;
+
+    
+    border-radius: 5px;
+    width: 280px;
+   
+    border: 2px solid transparent;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #1773be;
+}
+
+button { 
+    height: 28px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1773be;
+    color: #fff;
+    
+}

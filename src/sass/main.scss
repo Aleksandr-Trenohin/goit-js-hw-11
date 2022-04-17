@@ -3,5 +3,14 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// Стили из подключенных паршалов
+@import './form.scss';
+@import './gallery.scss'
+
+
