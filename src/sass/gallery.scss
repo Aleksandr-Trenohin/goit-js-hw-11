@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   margin: -15px;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .photo-card {
@@ -40,15 +41,15 @@ img {
 }
 
 .load-more {
+    border: 2px solid #fff;
+    border-radius: 5px;
+   
   display: block;
   height: 33px;
   background-color: #1773be;
   color: #fff;
 
-  margin-top: 22px;
-  margin-left: auto;
-  margin-bottom: 22px;
-  margin-right: auto;
+  margin: 22px auto;  
 }
 .load-more:hover {
   background-color: #fff;

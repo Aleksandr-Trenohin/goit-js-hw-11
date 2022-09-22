@@ -13,7 +13,7 @@
 }
 
 .search-form {
-    
+    display: flex;
     max-width: 370px;
     margin: 0 auto;
     
@@ -22,7 +22,6 @@
 input {
     padding: 1px 6px;
     height: 28px;
-
     
     border-radius: 5px;
     width: 280px;
@@ -31,18 +30,20 @@ input {
 }
 input:focus {
     outline: none;
-    border: 2px solid #1773be;
+    border: 2px solid transparent;
+    background-color: #dfdfeb;
 }
 
-button { 
+.search-btn { 
     height: 28px;
     background-color: #fff;
     color: #000;
     border: 2px solid #fff;
     border-radius: 5px;
+    margin-left: 11px;
 }
 
-button:hover {
+.search-btn:hover {
     background-color: #1773be;
     color: #fff;
     
